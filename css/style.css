@@ -71,14 +71,44 @@ footer {
 }
 
 button {
-    background-color: #337AF8;
+    background: linear-gradient(90deg, #337AF8, #34E7F7);
     color: white;
     font-family: lato;
     font-weight: bold;
-    border-radius: 15px;
-    width: 15%;
-    height: 50px;
-    font-size: 15px;
+    border-radius: 40px;
+    border-color: #ffffff;
+    border-width: 10px;
+    width: 250px;
+    height: 70px;
+    font-size: 20px;
+    text-transform: uppercase;
+    position: relative;
+    -webkit-transition-duration: 0.4s; /* Chrome */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+button:after {
+  content: "";
+  background: #ffffff;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px!important;
+  margin-top: -120%;
+  border-radius: 40px;
+  opacity: 0;
+  transition: all 3.0s
+}
+
+button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
 }
 
 .card {
