@@ -83,7 +83,7 @@ button {
     font-size: 20px;
     text-transform: uppercase;
     position: relative;
-    -webkit-transition-duration: 0.4s; /* Chrome */
+    -webkit-transition-duration: 0.4s;
     transition-duration: 0.4s;
     text-decoration: none;
     overflow: hidden;
